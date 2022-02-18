@@ -3,6 +3,7 @@
 The open-close principle states that objects are open for extension but closed for modification. 
 
 You never jump into an existing class and start modifying it (unless you absolutely have to because there's a bug, for example)
+=======
 */
 
 let Color = Object.freeze({
