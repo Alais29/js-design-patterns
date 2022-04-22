@@ -3,7 +3,7 @@
 ### Single Responsability Principle
 
 - A class should only have one reason to change
-- Separation of concerns - differente classes handling differente, independent tasks/problems
+- Separation of concerns - different classes handling different, independent tasks/problems
 
 ### Open-closed principle
 
