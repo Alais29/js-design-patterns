@@ -46,6 +46,7 @@ class Point {
 
   // in this case we'd still have the constructor (line 10) and people can use it if they want but this is kind of the fancy way of initializing this point using x and y coordinates and now through the method's name we're giving a hint to the user as to what values they're expected to provide, and also the name of the parameters tell you what's going on
   static newCartesianPoint(x, y) {
+    // It's not mandatory that we always return a new instance of the same class, we could return other classes here
     return new Point(x, y);
   }
 
