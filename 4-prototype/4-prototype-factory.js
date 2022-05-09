@@ -78,7 +78,7 @@ class Serializer {
   }
 }
 
-// First of all, we're going to define the actual prototype, first we define an EmployeeFactory class and then we define the offices where people can work, which will be the prototypes, we create 2 employees as properties of the EmployeeFactory, a main one and an auxiliary one, both will have null for the name property, since it'll be customized, and will also have null for the suite property of the adress since this will also be customized. We'll also add an isntance of the Serializer itself to the EmployeeFactory at the class level (lines 80, 81, 85)
+// First of all, we're going to define the actual prototype, first we define an EmployeeFactory class and then we define the offices where people can work, which will be the prototypes, we create 2 employees as properties of the EmployeeFactory, a main one and an auxiliary one, both will have null for the name property, since it'll be customized, and will also have null for the suite property of the adress since this will also be customized. We'll also add an isntance of the Serializer itself to the EmployeeFactory at the class level (lines 108, 109, 113)
 
 class EmployeeFactory {
   // Here we need to have some sort of non public utility method, we need to suggest that these methods will be used internally inside the class, and should not be called externally
