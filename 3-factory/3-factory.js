@@ -35,7 +35,7 @@ console.log(p2);
 
 // It's up to you how to expose the factories themselves, here we made it so we can call the static methods without instantiating the PointFactory class, we could make the methods not static, so it will allow people to instantiate their own factories, although this only make sense if the factory actually needs to store some data for example
 
-// Another thing that we can do if we want to suggest to the user that they shouldn't be using the constructor (Point) but the factory instead, is maybe expoise the factory right from the object which the factory creates (Point), obviously this introduces a bit of coupling because all of a sudden the factory and the object are coupled together and it brakes the open-close principle but it does gives you the benefit of a nicer API (line 11)
+// Another thing that we can do if we want to suggest to the user that they shouldn't be using the constructor (Point) but the factory instead, is maybe expose the factory right from the object which the factory creates (Point), obviously this introduces a bit of coupling because all of a sudden the factory and the object are coupled together and it brakes the open-close principle but it does gives you the benefit of a nicer API
 
 // The classes would then look like this:
 

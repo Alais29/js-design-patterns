@@ -2,12 +2,12 @@
 =======
 TLDR
 =======
-Instead of returning differente instances from the constructor, we make sure that all the data is shared between every single instance, so we initialize it outside of the scope of the actual class, but inside the class we provide the getters and setters that allow us to access or mutate those shared properties 
+Instead of returning different instances from the constructor, we make sure that all the data is shared between every single instance, so we initialize it outside of the scope of the actual class, but inside the class we provide the getters and setters that allow us to access or mutate those shared properties 
 */
 
-// Another way of implementing the singleton design pattern is called the Monostate, it's similar to the previous implementation, but its difference is that it does not modify the constructor, instead of that its built in a way that every single instance of a class shares all their data by using getters and setters.
+// Another way of implementing the singleton design pattern is called the Monostate, it's similar to the previous implementation, but its difference is that it does not modify the constructor, instead of that, it's built in a way that every single instance of a class shares all their data by using getters and setters.
 
-// We can have getters and setters for different properties, but instead of storing those properties at the instance level of the class we store them at the class level (line 21), we use an undersocre to these variables to indicate that they are not meant to be consumed directly, but through the getters and setters (line 6, 9, 13, 16)
+// We can have getters and setters for different properties, but instead of storing those properties at the instance level of the class we store them at the class level (line 32), we use an underscore to these variables to indicate that they are not meant to be consumed directly, but through the getters and setters (line 13, 16, 20, 23)
 
 class ChiefExecutiveOfficer {
   get name() {

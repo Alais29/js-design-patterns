@@ -25,7 +25,7 @@ class Point {
   //   this.y = rho * Math.sin(theta);
   // }
 
-  // so instead of that we could define a coordinate system (line 3) and then make a constructor which takes to values and also a cartesian system, which in this case we default to cartesian
+  // so instead of that we could define a coordinate system (line 9) and then make a constructor which takes two values and also a cartesian system, which in this case we default to cartesian
 
   // constructor(a, b, cs = CoordinatSystem.cartesian) {
   //   switch (cs) {
@@ -44,7 +44,7 @@ class Point {
 
   // this is where the factory method comes in, a factory method is a method that allows you to create an object, and a good thing is that it doesn't have to be called constructor
 
-  // in this case we'd still have the constructor (line 10) and people can use it if they want but this is kind of the fancy way of initializing this point using x and y coordinates and now through the method's name we're giving a hint to the user as to what values they're expected to provide, and also the name of the parameters tell you what's going on
+  // in this case we'd still have the constructor (line 16) and people can use it if they want but this is kind of the fancy way of initializing this point using x and y coordinates and now through the method's name we're giving a hint to the user as to what values they're expected to provide, and also the name of the parameters tell you what's going on
   static newCartesianPoint(x, y) {
     // It's not mandatory that we always return a new instance of the same class, we could return other classes here
     return new Point(x, y);

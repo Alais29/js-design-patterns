@@ -13,3 +13,6 @@ A component which is inatantiated only once, and a singleton design pattern is a
 - We want to prevent anyone from creating additional copies
 
 ## Summary
+- A constructor can choose what to return; we can keep returning the same instance
+- Monostate: many instances, shared data. *A rather bizarre kind of implementation, NOT RECOMMENDED TO USE, DANGEROUS FOR SEVERAL REASONS, SHOWN ONLY FOR ACADEMIC CURIOSITY.*
+- Directly depending on the Singleton is a bad idea; introduce a dependency that can be substituted instead (for example, in the constructor of the component that uses the Singleton)

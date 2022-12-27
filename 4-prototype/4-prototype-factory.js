@@ -5,12 +5,12 @@ TLDR
 If you have a finite set of different prototypes that you want to work with, it might make sense to put them into a separate factory and use that factory to provide useful factory methods to instantiate customized copies of these prototypes
 */
 
-// This is a merger of prototype and factory design patterns, why would this be useful? this way you can have a couple of predefined objects and a very nice interfaec on top of that, that takes these objects, customizes them and gives you a nice API, a set of methods for making those copies instead of you having to use the serializer explicitly
+// This is a merger of prototype and factory design patterns, why would this be useful? this way you can have a couple of predefined objects and a very nice interface on top of that, that takes these objects, customizes them and gives you a nice API, a set of methods for making those copies instead of you having to use the serializer explicitly
 
 // To implement this we're going to have 2 objects:
 // 1. Address, which will have a suite, streetAddress and city parameters, a company might have a finite number of offices and all of them share the streetAddress and city, in the sense that if there are 100 people working in a particular office they're all going to have the same streetAddress and city, but the suite number changes
 
-// 2. Employee, which will have a name and adress properties, and where the name gets customized whereas their address is conly customized partly, since we only want to customize the suite number, the other 2 properties will come from the prototype
+// 2. Employee, which will have a name and adress properties, and where the name gets customized whereas their address is only customized partly, since we only want to customize the suite number, the other 2 properties will come from the prototype
 
 class Address {
   constructor(suite, streetAddress, city) {
@@ -78,7 +78,7 @@ class Serializer {
   }
 }
 
-// First of all, we're going to define the actual prototype, first we define an EmployeeFactory class and then we define the offices where people can work, which will be the prototypes, we create 2 employees as properties of the EmployeeFactory, a main one and an auxiliary one, both will have null for the name property, since it'll be customized, and will also have null for the suite property of the adress since this will also be customized. We'll also add an isntance of the Serializer itself to the EmployeeFactory at the class level (lines 108, 109, 113)
+// First of all, we're going to define the actual prototype, first we define an EmployeeFactory class and then we define the offices where people can work, which will be the prototypes, we create 2 employees as properties of the EmployeeFactory, a main one and an auxiliary one, both will have null for the name property, since it'll be customized, and will also have null for the suite property of the adress since this will also be customized. We'll also add an instance of the Serializer itself to the EmployeeFactory at the class level (lines 108, 109, 113)
 
 class EmployeeFactory {
   // Here we need to have some sort of non public utility method, we need to suggest that these methods will be used internally inside the class, and should not be called externally

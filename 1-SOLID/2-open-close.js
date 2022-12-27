@@ -66,7 +66,7 @@ class SizeSpecification {
   }
 }
 
-// This may seem as an overkill for this situation, BUT the result is now every filter is untied from the other, so if we need a new specification we don't modify the existing ones, we just make a new class which also has a constructor that takes some criteria and crucially it has an isSatisfied method (Continue on Line 80)
+// This may seem as an overkill for this situation, BUT the result is now every filter is untied from the other, so if we need a new specification we don't modify the existing ones, we just make a new class which also has a constructor that takes some criteria and crucially it has an isSatisfied method (Continue on Line 83)
 
 let apple = new Product("Apple", Color.green, Size.small);
 let tree = new Product("Tree", Color.green, Size.large);

@@ -8,7 +8,7 @@ When piecewise object construction is complicated, provide an API for doing it s
 - Other objects require a lot of ceremony to create
 - Having an object with 10 initializer arguments is not productive
 - Instead, opt for a piecewise construction
-- **Builder provides an API for constructing and object step-by-step**
+- **Builder provides an API for constructing an object step-by-step**
 
 ## Summary
 

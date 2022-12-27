@@ -64,7 +64,7 @@ class Tag {
 // Now we can start using this Tag, but in order to make it easier to use, we're actually going to make a builder, and this takes us to the core of the Builder Design Pattern. The Builder is a separate component that helps you build tags on top of tags
 
 class HtmlBuilder {
-  // the rootName is the name of the root element, if you're building an entire web page, the root element would probably be html, if you're building just a table, the root elemento would be table and so on
+  // the rootName is the name of the root element, if you're building an entire web page, the root element would probably be html, if you're building just a table, the root element would be table and so on
   constructor(rootName) {
     this.root = new Tag(rootName);
     this.rootName = rootName;

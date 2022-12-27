@@ -97,7 +97,7 @@ class Serializer {
       let type = this.types[object.typeIndex];
       // then we make an instance of that type
       let obj = new type();
-      // then we need to make sure that every single property of object actually gets assigned, gets written into obj, only the properties (name, address), the methods already exist in the obj instance, and remember that his has to be recursive, because if obj has an address, the address also has to be reconstructed using the same method
+      // then we need to make sure that every single property of object actually gets assigned, gets written into obj, only the properties (name, address), the methods already exist in the obj instance, and remember that this has to be recursive, because if obj has an address, the address also has to be reconstructed using the same method
       for (let key in object) {
         if (object.hasOwnProperty(key) && object[key] !== null)
           obj[key] = this.reconstructRecursive(object[key]);
