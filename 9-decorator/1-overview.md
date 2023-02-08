@@ -1,4 +1,4 @@
-# Composite
+# Decorator
 Facilitates the addition of behaviors to individual objects without inheriting from them.
 
 ## Motivation
