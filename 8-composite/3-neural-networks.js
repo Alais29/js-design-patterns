@@ -97,7 +97,7 @@ let layer2 = new NeuronLayer(4)
 
 // In the case of neuron there is no problem (line 27). But there's a problem with the neuron layer class since it's already extending the Array class, and it can't extend 2 classes, so we'll agregate a chunk of code that will allow us to extend several base classes (see aggregation.js file)
 
-// if we run this as is, we'll still get the error "this is not iterable" on the connectable class, and the reason why is because neuron is not iterable yet and it has to be iterable; so a the class Neuron has to be able to masquerade as a collection of neurons consisting of a single element, which is that particular neuron. We can implement this in JS with the iterator Symbol (line 46)
+// if we run this as is, we'll still get the error "this is not iterable" on the connectable class, and the reason why is because neuron is not iterable yet and it has to be iterable; so the class Neuron has to be able to masquerade as a collection of neurons consisting of a single element, which is that particular neuron. We can implement this in JS with the iterator Symbol (line 46)
 
 // the iterator symbol will be used whenever a for method is called on the Neuron class, it will iterate through it using the iterator, which will return the element just once
 

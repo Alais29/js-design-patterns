@@ -2,10 +2,10 @@
 ======
 TLDR
 ======
-This is probably the simplest implementation of the composite design patter. The idea here is that you can have an object (GraphicObject) which masquerades as both a singular element and a collection of elements.
+This is probably the simplest implementation of the composite design pattern. The idea here is that you can have an object (GraphicObject) which masquerades as both a singular element and a collection of elements.
 */
 
-// let's discuss the idea of grouping geometric shapes together. If we think of a drawing application, we can drag around and resize individual shapes but you can also group several shapes together and then perform common operations on them. LEt's try to emulate this scenario
+// let's discuss the idea of grouping geometric shapes together. If we think of a drawing application, we can drag around and resize individual shapes but you can also group several shapes together and then perform common operations on them. Let's try to emulate this scenario
 
 // this class will be both a single object is it's used as a base class as well as a collection of objects if it's used by itself
 
@@ -14,7 +14,7 @@ class GraphicObject {
   constructor(name= 'Group ' + (GraphicObject.count++)) {
     this._name = name;
     this.color = undefined;
-    // we have a set of children because this graphic object can act either as a group, in which case it has a number of other graphic objects inside it, or it can ac as a standalone object
+    // we have a set of children because this graphic object can act either as a group, in which case it has a number of other graphic objects inside it, or it can act as a standalone object
     this.children = [];
   }
 
